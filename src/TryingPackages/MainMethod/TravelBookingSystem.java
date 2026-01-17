@@ -51,6 +51,8 @@ public class TravelBookingSystem {
         }
     }
 
+    // -------------------user signup---------------
+
     static void signUp() {
         sc.nextLine();
         System.out.print("Username: ");
@@ -61,6 +63,8 @@ public class TravelBookingSystem {
         System.out.println("Account Created!");
     }
 
+//-------------user logIn------------
+    
     static void userLogin() {
         sc.nextLine();
         System.out.print("Username: ");
@@ -77,7 +81,7 @@ public class TravelBookingSystem {
         System.out.println("Invalid Login!");
     }
 
-    // ================= USER PANEL (FIXED) =================
+    // ================= USER PANEL =================
     static void userPanel(User user) {
         while (true) {
             System.out.println("\n--- USER PANEL ---");
@@ -107,13 +111,13 @@ public class TravelBookingSystem {
         String pass = sc.nextLine();
 
         if (id.equals("admin123") && pass.equals("admin@123")) {
-            adminPanel(); // FIXED: full CRUD panel
+            adminPanel(); 
         } else {
             System.out.println("Wrong Credentials!");
         }
     }
 
-    // ================= ADMIN PANEL (FULL CRUD) =================
+    // ================= ADMIN PANEL =================
     static void adminPanel() {
         while (true) {
             System.out.println("\n--- ADMIN PANEL ---");
@@ -148,7 +152,7 @@ public class TravelBookingSystem {
         }
     }
 
-    // ================= ROUTE CRUD =================
+    // ================= ROUTE =================
     static void addRoute() {
         sc.nextLine();
         System.out.print("From City: ");
@@ -195,7 +199,7 @@ public class TravelBookingSystem {
         System.out.println("Route Deleted!");
     }
 
-    // ================= TRANSPORT CRUD =================
+    // ================= TRANSPORT =================
     static void addTransport() {
         if (rCount == 0) {
             System.out.println("Add route first!");
@@ -250,7 +254,7 @@ public class TravelBookingSystem {
         System.out.println("Transport Deleted!");
     }
 
-    // ================= HOTEL CRUD =================
+    // ================= HOTEL =================
     static void addHotel() {
         sc.nextLine();
         System.out.print("Hotel Name: ");
@@ -412,3 +416,4 @@ public class TravelBookingSystem {
 }
 
 }
+
